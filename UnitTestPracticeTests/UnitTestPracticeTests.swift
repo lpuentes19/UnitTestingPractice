@@ -25,4 +25,10 @@ class UnitTestPracticeTests: XCTestCase {
         
         XCTAssertEqual(favoriteSoccerTeam, soccerTeamThatWonLastSeason)
     }
+    
+    func testNilOrNotNil() {
+        var bankAccount: Int?
+        
+        XCTAssertNil(bankAccount)
+    }
 }
