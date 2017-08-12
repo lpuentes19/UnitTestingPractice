@@ -15,3 +15,9 @@ class ViewController: UIViewController {
     }
 }
 
+extension Int {
+    func square() -> Int {
+        return self * self
+    }
+}
+
