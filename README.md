@@ -5,6 +5,8 @@
 * Foundation
 * UIKIT
 * XCTest
+* XCTAssertEqual
+* XCTAssertNil
 
 ### Features
 * This is a project specifically designed to help further my knowledge with Unit Testing. 
