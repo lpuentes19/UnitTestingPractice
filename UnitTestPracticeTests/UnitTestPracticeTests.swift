@@ -12,6 +12,15 @@ import XCTest
 
 class UnitTestPracticeTests: XCTestCase {
     
+    var vc: ViewController!
+    
+    override func setUp() {
+        super.setUp()
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        vc = storyboard.instantiateInitialViewController() as! ViewController
+    }
+    
     // Test two expressions to see if they're equal or not
     func testNBATeam() {
         var favoriteNBATeam: String = "Utah Jazz"
@@ -43,5 +52,10 @@ class UnitTestPracticeTests: XCTestCase {
         let squaredValue = ten.square()
         
         XCTAssertEqual(squaredValue, 100)
+    }
+    
+    func testPercentageCalculator() {
+        let p = vc.percentage(value: 50, 50)
+        XCTAssert(p == 25)
     }
 }

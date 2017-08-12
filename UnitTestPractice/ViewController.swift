@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    func percentage(value: Float, _ percentage: Float) -> Float {
+        return value * (percentage / 100)
+    }
 }
 
 extension Int {
